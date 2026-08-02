@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /littleknights/
 
 Sitemap: https://mxiventures.com/sitemap.xml
