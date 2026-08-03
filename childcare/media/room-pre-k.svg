@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder illustration">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#C98B3E" stop-opacity=".14"/><stop offset="1" stop-color="#C98B3E" stop-opacity=".34"/>
+</linearGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<g fill="#C98B3E" opacity=".28">
+<circle cx="170" cy="430" r="54"/><rect x="300" y="392" width="104" height="104" rx="26"/>
+<circle cx="560" cy="440" r="44"/><rect x="660" y="404" width="82" height="82" rx="22"/>
+</g>
+<g stroke="#C98B3E" stroke-opacity=".26" stroke-width="3" fill="none">
+<path d="M0 520 Q200 470 400 520 T800 520"/><path d="M0 556 Q200 506 400 556 T800 556"/>
+</g>
+<text x="400" y="250" text-anchor="middle" font-family="Georgia,serif" font-size="34"
+ fill="#C98B3E" fill-opacity=".62">Your room photo</text>
+<text x="400" y="292" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="18"
+ fill="#C98B3E" fill-opacity=".46" letter-spacing="1">PLACEHOLDER</text>
+</svg>
