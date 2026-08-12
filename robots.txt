@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /littleknights/
 Disallow: /childcare/
 Disallow: /trades-auto/
 

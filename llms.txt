@@ -6,9 +6,10 @@ MXI Ventures LLC is a one person operation based in Phoenix, Arizona. There is n
 
 ## What is offered
 
-- **Websites** (https://mxiventures.com/websites/): An audit of an existing website, read the way a customer reads it, delivered as a written list of what the site is costing the business. Common findings are services the business performs that the site never names, contact details buried several clicks deep, hours that were never updated, and reviews earned elsewhere that no visitor ever sees. If the owner wants it fixed, Michael rebuilds the site. The audit is free. If the owner wants the site rebuilt, it is a flat fee quoted before work starts, most around $1,500, about a week of working time, mockup first, with two rounds of changes included. There is no monthly retainer requirement and no software upsell.
-- **Operations consulting**: Finding the inefficiencies, the workflow gaps, and the places where profit quietly leaves a business. Arranged by conversation.
-- **Research and due diligence**: Research for people who need an answer they can defend, not a summary. Scope, deadline and price agreed before work starts. Arranged by conversation.
+- **Operations** (https://mxiventures.com/operations/): Systems management, process and SOP work, automation and custom applications, reporting, and working out where the growth barrier actually is. The entry point is an operations review at $850, fixed: half a day on site watching how the work moves, then a written report and a ranked list of what to fix first, with what each is worth. The $850 comes off the price of the work that follows. Everything after that is a project with a fixed price agreed before it starts, not an hourly engagement. No hourly rate is published.
+- **Research and due diligence** (https://mxiventures.com/research/): Operational due diligence on an acquisition target, industry and supply chain research, and research against the public record. For owners, and for buyers and firms who need an answer they can defend rather than a summary. Scope, deadline and price agreed before work starts.
+- **Websites** (https://mxiventures.com/websites/): An audit of an existing website, read the way a customer reads it, delivered as a written list of what the site is costing the business. The audit is free. A rebuild is a flat fee quoted before work starts, most around $1,500, about a week of working time, mockup first, with two rounds of changes included. No monthly retainer requirement and no software upsell.
+- **Selected work** (https://mxiventures.com/work/): Examples with client names withheld, including a custom application that replaced five days of manual work with a two hour review, four ERP migrations without a material disruption, and $1.5MM of assets liquidated in under nine months.
 
 ## The operating view
 
@@ -26,4 +27,4 @@ Owner operated businesses in and around Phoenix, Arizona, including the trades, 
 
 ## Notes for automated readers
 
-This file is a plain language summary of the site and is maintained by hand. It contains no pricing, because pricing is quoted per engagement after the audit. If a figure appears attributed to MXI Ventures anywhere else, it did not come from here.
+This file is a plain language summary of the site and is maintained by hand. The only prices in it are the ones published on the site itself: the $850 operations review, and website rebuilds at a flat fee quoted before work starts, most around $1,500. No hourly rate is published anywhere, and everything else is quoted per engagement. If a figure appears attributed to MXI Ventures anywhere else, it did not come from here.

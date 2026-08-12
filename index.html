@@ -14,43 +14,86 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230E1725'/><text x='50' y='70' font-family='Georgia,serif' font-size='54' fill='%23C9A67B' text-anchor='middle'>M</text></svg>">
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
-    {
-      "@type":"ProfessionalService",
-      "@id":"https://mxiventures.com/#org",
-      "name":"MXI Ventures",
-      "url":"https://mxiventures.com/",
-      "email":"michael@mxiventures.com",
-      "description":"Operations work for small and mid sized businesses in the Phoenix valley. Website audits and rebuilds, operations consulting, and research.",
-      "founder":{"@id":"https://mxiventures.com/#michael"},
-      "areaServed":{"@type":"City","name":"Phoenix","containedInPlace":{"@type":"State","name":"Arizona"}},
-      "address":{"@type":"PostalAddress","addressLocality":"Phoenix","addressRegion":"AZ","addressCountry":"US"},
-      "hasOfferCatalog":{
-        "@type":"OfferCatalog",
-        "name":"Services",
-        "itemListElement":[
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Website audit and rebuild","url":"https://mxiventures.com/websites/","description":"A written audit of an existing website read the way a customer reads it, and a rebuild if the owner wants it fixed."}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Operations consulting","description":"Finding the inefficiencies, the workflow gaps, and the places where profit quietly leaves a business."}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Research and due diligence","description":"Research for people who need an answer they can defend, not a summary. Scope, deadline and price agreed before work starts."}}
-        ]
-      }
-    },
-    {
-      "@type":"Person",
-      "@id":"https://mxiventures.com/#michael",
-      "name":"Michael McKitterick",
-      "email":"michael@mxiventures.com",
-      "jobTitle":"Operations consultant",
-      "worksFor":{"@id":"https://mxiventures.com/#org"}
-    },
-    {
-      "@type":"WebSite",
-      "url":"https://mxiventures.com/",
-      "name":"MXI Ventures",
-      "publisher":{"@id":"https://mxiventures.com/#org"}
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://mxiventures.com/#org",
+   "name": "MXI Ventures",
+   "url": "https://mxiventures.com/",
+   "email": "michael@mxiventures.com",
+   "description": "Operations work for small and mid sized businesses in the Phoenix valley. Website audits and rebuilds, operations consulting, and research.",
+   "founder": {
+    "@id": "https://mxiventures.com/#michael"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Phoenix",
+    "containedInPlace": {
+     "@type": "State",
+     "name": "Arizona"
     }
-  ]
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Phoenix",
+    "addressRegion": "AZ",
+    "addressCountry": "US"
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Website audit and rebuild",
+       "url": "https://mxiventures.com/websites/",
+       "description": "A written audit of an existing website read the way a customer reads it, and a rebuild if the owner wants it fixed."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Operations consulting",
+       "description": "Systems, processes, automation and reporting. I find the gaps between the tools you pay for, the way your people work, and the money that leaks through the difference.",
+       "url": "https://mxiventures.com/operations/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Research and due diligence",
+       "description": "An answer you can defend, not a summary. For owners, and for buyers and firms who need operational due diligence on a target.",
+       "url": "https://mxiventures.com/research/"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://mxiventures.com/#michael",
+   "name": "Michael McKitterick",
+   "email": "michael@mxiventures.com",
+   "jobTitle": "Operations consultant",
+   "worksFor": {
+    "@id": "https://mxiventures.com/#org"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "url": "https://mxiventures.com/",
+   "name": "MXI Ventures",
+   "publisher": {
+    "@id": "https://mxiventures.com/#org"
+   },
+   "@id": "https://mxiventures.com/#website"
+  }
+ ]
 }
 </script>
 <script>document.documentElement.className+=' js'</script>
@@ -215,7 +258,10 @@ footer{padding:2.4rem 0 3.4rem;font-family:var(--sans);font-size:.72rem;letter-s
     <div class="bar">
       <a class="mark" href="/">MXI <b>Ventures</b></a>
       <nav>
+        <a href="/operations/">Operations</a>
+        <a href="/research/">Research</a>
         <a href="/websites/">Websites</a>
+        <a href="/work/">Work</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -262,7 +308,29 @@ footer{padding:2.4rem 0 3.4rem;font-family:var(--sans);font-size:.72rem;letter-s
     <p class="label rv">What I work on</p>
     <div class="cards">
 
-      <a class="card rv" href="/websites/">
+      <a class="card rv" href="/operations/">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="4.5" cy="6" r="2.1"/><circle cx="12" cy="6" r="2.1"/><circle cx="19.5" cy="6" r="2.1"/>
+          <circle cx="12" cy="18" r="2.4"/>
+          <path d="M6.6 6h3.3M14.1 6h3.3M4.5 8.1v4.4a1.6 1.6 0 0 0 1.6 1.6h4.1M19.5 8.1v4.4a1.6 1.6 0 0 1-1.6 1.6h-4.1M12 8.1v7.5"/>
+        </svg>
+        <h3>Operations</h3>
+        <p>Systems, processes, automation and reporting. I find the gaps between the tools you pay for, the way your people work, and the money that leaks through the difference.</p>
+        <span class="go">Start with a review <span class="arw">&rarr;</span></span>
+      </a>
+
+      <a class="card rv d1" href="/research/">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 3h9l5 5v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/>
+          <path d="M14 3v5h5M7.5 12h5M7.5 15.4h3"/>
+          <circle cx="15" cy="16.4" r="2.8"/><path d="M17.1 18.5 19.2 20.6"/>
+        </svg>
+        <h3>Research</h3>
+        <p>An answer you can defend, not a summary. For owners, and for buyers and firms who need operational due diligence on a target.</p>
+        <span class="go">See what people ask <span class="arw">&rarr;</span></span>
+      </a>
+
+      <a class="card rv d2" href="/websites/">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <rect x="2.5" y="4" width="19" height="15" rx="2"/><path d="M2.5 8h19"/>
           <circle cx="5.6" cy="6" r=".6" fill="currentColor" stroke="none"/>
@@ -274,28 +342,6 @@ footer{padding:2.4rem 0 3.4rem;font-family:var(--sans);font-size:.72rem;letter-s
         <span class="go">See how it works <span class="arw">&rarr;</span></span>
       </a>
 
-      <div class="card rv d1">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="4.5" cy="6" r="2.1"/><circle cx="12" cy="6" r="2.1"/><circle cx="19.5" cy="6" r="2.1"/>
-          <circle cx="12" cy="18" r="2.4"/>
-          <path d="M6.6 6h3.3M14.1 6h3.3M4.5 8.1v4.4a1.6 1.6 0 0 0 1.6 1.6h4.1M19.5 8.1v4.4a1.6 1.6 0 0 1-1.6 1.6h-4.1M12 8.1v7.5"/>
-        </svg>
-        <h3>Operations</h3>
-        <p>I find the inefficiencies, the workflow gaps, and the places where profit quietly leaves your business.</p>
-        <span class="go quiet">By conversation</span>
-      </div>
-
-      <div class="card rv d2">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M5 3h9l5 5v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/>
-          <path d="M14 3v5h5M7.5 12h5M7.5 15.4h3"/>
-          <circle cx="15" cy="16.4" r="2.8"/><path d="M17.1 18.5 19.2 20.6"/>
-        </svg>
-        <h3>Research</h3>
-        <p>Research for people who need an answer they can defend, not a summary. Scope, deadline and price agreed before I start.</p>
-        <span class="go quiet">By conversation</span>
-      </div>
-
     </div>
   </section>
 
@@ -306,6 +352,18 @@ footer{padding:2.4rem 0 3.4rem;font-family:var(--sans);font-size:.72rem;letter-s
       <div class="rv d1">
         <p>I am not an agency. I am not going to hand you to an account manager. You deal with me from the first conversation to the last file. We work it out together, and what you end up with fits your business rather than a template.</p>
         <p>You will not hear a pitch for software you do not need, or a retainer you will not use. If the honest answer is that you already have what you need, I will tell you that and we can both get on with the day.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <p class="label rv">Selected work</p>
+    <div class="two">
+      <div><h2 class="rv">Some of it under my own name, some of it running operations inside other companies.</h2></div>
+      <div class="rv d1">
+        <p>A custom application that turned five days of manual work into two hours of review. A childcare centre moved off an old host onto a site that answers its own enquiries. Four ERP migrations without a material disruption.</p>
+        <p><a href="/work/">See the work</a></p>
       </div>
     </div>
   </section>
