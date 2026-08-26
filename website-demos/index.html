@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website demos — MXI Ventures</title>
+<meta name="description" content="Demonstration websites built by MXI Ventures, across trades, childcare and real estate, at three levels of build. Every business shown is fictional.">
+<link rel="canonical" href="https://mxiventures.com/website-demos/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Website demos — MXI Ventures">
+<meta property="og:description" content="Demonstration websites across trades, childcare and real estate, at three levels of build.">
+<meta property="og:url" content="https://mxiventures.com/website-demos/">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>:root{--ink:#0E1725;--panel:#18243A;--fg:#E9E5DD;--dim:#A3AEBF;--tan:#C9A67B;--tan-hi:#E3C79E;
+--sans:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+--serif:ui-serif,"New York","Iowan Old Style",Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--fg);font:17px/1.6 var(--sans);
+-webkit-font-smoothing:antialiased}
+a{color:var(--tan-hi)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header.top{padding:26px 0;border-bottom:1px solid #22314c}
+header.top .wrap{display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
+.brand{font:600 19px/1 var(--sans);color:var(--fg);text-decoration:none;letter-spacing:.01em}
+header.top nav{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap}
+header.top nav a{color:var(--dim);text-decoration:none;font-size:15px}
+header.top nav a:hover{color:var(--tan-hi)}
+.hero{padding:58px 0 34px}
+h1{font:400 clamp(30px,4.6vw,48px)/1.12 var(--serif);margin:0 0 16px;letter-spacing:-.01em}
+.lede{color:var(--dim);max-width:64ch;margin:0 0 8px;font-size:19px}
+.tierkey{display:flex;gap:22px;flex-wrap:wrap;margin:26px 0 0;padding:16px 0 0;
+border-top:1px solid #22314c;color:var(--dim);font-size:15px}
+.tierkey b{color:var(--fg);font-weight:600}
+h2.vert{font:400 24px/1.2 var(--serif);margin:46px 0 4px;color:var(--fg)}
+h2.vert span{color:var(--dim);font:400 14px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;
+margin-left:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;margin:18px 0 0}
+.card{background:var(--panel);border:1px solid #22314c;border-radius:4px;overflow:hidden;
+text-align:left;padding:0;color:inherit;font:inherit;cursor:pointer;display:flex;flex-direction:column;
+transition:border-color .18s ease,transform .18s ease}
+.card:hover,.card:focus-visible{border-color:var(--tan);transform:translateY(-2px);outline:none}
+.shot{aspect-ratio:16/10;background:#0b1220;border-bottom:1px solid #22314c;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.card .body{padding:15px 17px 17px}
+.tier{display:inline-block;font:700 11px/1 var(--sans);letter-spacing:.11em;text-transform:uppercase;
+padding:5px 9px;border-radius:2px;margin:0 0 9px}
+
+.t-Lite{background:#3d4a63;color:#dbe3f0}
+.t-Standard{background:#7d6440;color:#f4ece0}
+.t-Premium{background:var(--tan);color:#14202f}
+.card h3{font:600 18px/1.3 var(--sans);margin:0 0 6px}
+.card p{margin:0;color:var(--dim);font-size:15px;line-height:1.5}
+.cta{margin:64px 0 0;padding:32px;background:var(--panel);border:1px solid #22314c;border-radius:4px}
+.cta h2{font:400 27px/1.2 var(--serif);margin:0 0 10px}
+.cta p{color:var(--dim);margin:0 0 20px;max-width:60ch}
+.btn{display:inline-block;background:var(--tan);color:#14202f;text-decoration:none;
+font:700 15px/1 var(--sans);padding:15px 22px;border-radius:3px}
+.btn:hover{background:var(--tan-hi)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid #33456b;margin-left:10px}
+.btn.ghost:hover{border-color:var(--tan);color:var(--tan-hi);background:transparent}
+footer.foot{margin:64px 0 0;padding:26px 0 46px;border-top:1px solid #22314c;color:var(--dim);
+font-size:15px}
+footer.foot a{color:var(--dim)}
+
+.ov{position:fixed;inset:0;background:rgba(6,10,18,.78);z-index:80;display:none;
+align-items:center;justify-content:center;padding:max(2vh,14px) max(3vw,14px)}
+.ov.on{display:flex}
+.ovpanel{width:min(1280px,80vw);height:min(82vh,900px);display:flex;flex-direction:column;
+background:var(--ink);border:1px solid #33456b;border-radius:6px;overflow:hidden;
+box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.ovbar{display:flex;gap:14px;align-items:center;padding:11px 18px;border-bottom:1px solid #22314c;
+background:var(--ink);flex-wrap:wrap}
+.ovbar .who{font:600 15px/1 var(--sans)}
+.ovbar .tier{margin:0}
+.ovbar .spacer{margin-left:auto}
+.ovbar button,.ovbar a{font:600 14px/1 var(--sans);padding:10px 14px;border-radius:3px;
+border:1px solid #33456b;background:transparent;color:var(--fg);cursor:pointer;text-decoration:none}
+.ovbar button:hover,.ovbar a:hover{border-color:var(--tan);color:var(--tan-hi)}
+.ovbar .close{background:var(--tan);color:#14202f;border-color:var(--tan)}
+.ovbar .close:hover{background:var(--tan-hi);color:#14202f}
+.ov iframe{flex:1;width:100%;border:0;background:#fff}
+.ovpanel .hint{padding:7px 18px;border-top:1px solid #22314c;color:var(--dim);font-size:13px;
+background:var(--ink)}
+@media (max-width:820px){.ovpanel{width:96vw;height:94vh}}
+@media (max-width:620px){.hero{padding:36px 0 22px}.cta{padding:22px}
+.btn.ghost{margin:10px 0 0;display:block;text-align:center}}</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="/">MXI Ventures</a>
+  <nav>
+    <a href="/websites/">Websites</a>
+    <a href="/operations/">Operations</a>
+    <a href="/research/">Research</a>
+    <a href="/work/">Work</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Website demos</h1>
+    <p class="lede">Real builds, shown end to end. Click any one to open it here &mdash; you will not
+    lose your place.</p>
+    <p class="lede"><strong>Every business on this page is fictional.</strong> The names, phone
+    numbers, addresses and reviews are placeholder content, so that what you are judging is the
+    build rather than the copy.</p>
+    <div class="tierkey">
+      <span><b>Lite</b> &mdash; the essentials, done properly.</span>
+      <span><b>Standard</b> &mdash; a fuller site, designed around the work.</span>
+      <span><b>Premium</b> &mdash; photography and craft, built for the business.</span>
+    </div>
+  </section>
+
+  <h2 class="vert">Heating &amp; Cooling<span>5 demos</span></h2><div class="grid"><button class="card" data-url="/website-demos/hvac-ironwood-cand3/index.html" data-name="Ironwood Heating &amp; Cooling · direction A" data-tier="Premium" data-tierclass="t-Premium"><div class="shot"><img loading="lazy" alt="" src="shots/hvac-ironwood-cand3.jpg"></div><div class="body"><span class="tier t-Premium">Premium</span><h3>Ironwood Heating &amp; Cooling &middot; direction A</h3><p>A full-bleed photograph of the work itself, a two-colour headline and bands of colour carrying the scroll.</p></div></button><button class="card" data-url="/website-demos/hvac-ironwood-v3/index.html" data-name="Ironwood Heating &amp; Cooling · direction B" data-tier="Premium" data-tierclass="t-Premium"><div class="shot"><img loading="lazy" alt="" src="shots/hvac-ironwood-v3.jpg"></div><div class="body"><span class="tier t-Premium">Premium</span><h3>Ironwood Heating &amp; Cooling &middot; direction B</h3><p>Warm desert palette, photography through the whole page, and a service list you can scan in seconds.</p></div></button><button class="card" data-url="/website-demos/hvac-ironwood-v2/index.html" data-name="Ironwood Heating &amp; Cooling · direction A" data-tier="Standard" data-tierclass="t-Standard"><div class="shot"><img loading="lazy" alt="" src="shots/hvac-ironwood-v2.jpg"></div><div class="body"><span class="tier t-Standard">Standard</span><h3>Ironwood Heating &amp; Cooling &middot; direction A</h3><p>A lighter build with one strong image, the phone number fixed to the header and the services up front.</p></div></button><button class="card" data-url="/website-demos/hvac-retrade/index.html" data-name="Ironwood Heating &amp; Cooling · direction B" data-tier="Standard" data-tierclass="t-Standard"><div class="shot"><img loading="lazy" alt="" src="shots/hvac-retrade.jpg"></div><div class="body"><span class="tier t-Standard">Standard</span><h3>Ironwood Heating &amp; Cooling &middot; direction B</h3><p>Designed to work without photography — slate and amber bands, a drawn mark, and the number never off screen.</p></div></button><button class="card" data-url="/website-demos/hvac-std-a/index.html" data-name="Ironwood Heating &amp; Cooling" data-tier="Lite" data-tierclass="t-Lite"><div class="shot"><img loading="lazy" alt="" src="shots/hvac-std-a.jpg"></div><div class="body"><span class="tier t-Lite">Lite</span><h3>Ironwood Heating &amp; Cooling</h3><p>The essentials: who you are, what you fix, where you go, and how to call. Nothing between the visitor and the phone.</p></div></button></div><h2 class="vert">Childcare<span>4 demos</span></h2><div class="grid"><button class="card" data-url="/website-demos/childcare-sprouts-premium/index.html" data-name="Little Sprouts Early Learning · direction A" data-tier="Premium" data-tierclass="t-Premium"><div class="shot"><img loading="lazy" alt="" src="shots/childcare-sprouts-premium.jpg"></div><div class="body"><span class="tier t-Premium">Premium</span><h3>Little Sprouts Early Learning &middot; direction A</h3><p>Photography-led and warm, with the programme, the day and the people all reachable from the first screen.</p></div></button><button class="card" data-url="/website-demos/childcare-sprouts-v3/index.html" data-name="Little Sprouts Early Learning · direction B" data-tier="Premium" data-tierclass="t-Premium"><div class="shot"><img loading="lazy" alt="" src="shots/childcare-sprouts-v3.jpg"></div><div class="body"><span class="tier t-Premium">Premium</span><h3>Little Sprouts Early Learning &middot; direction B</h3><p>Rooms, hands and materials shown honestly, with a calm palette and a tour request that is easy to find.</p></div></button><button class="card" data-url="/website-demos/childcare-hugo/index.html" data-name="Sample Childcare Center" data-tier="Standard" data-tierclass="t-Standard"><div class="shot"><img loading="lazy" alt="" src="shots/childcare-hugo.jpg"></div><div class="body"><span class="tier t-Standard">Standard</span><h3>Sample Childcare Center</h3><p>A fuller site for a centre: programmes, hours, staff and a real enquiry form, in a friendly, legible layout.</p></div></button><button class="card" data-url="/website-demos/childcare-standard/index.html" data-name="Little Sprouts Early Learning" data-tier="Lite" data-tierclass="t-Lite"><div class="shot"><img loading="lazy" alt="" src="shots/childcare-standard.jpg"></div><div class="body"><span class="tier t-Lite">Lite</span><h3>Little Sprouts Early Learning</h3><p>The essentials for a centre with no photography yet — clear programmes, clear hours, and a way to book a tour.</p></div></button></div><h2 class="vert">Real Estate<span>3 demos</span></h2><div class="grid"><button class="card" data-url="/website-demos/realestate-whitfield/index.html" data-name="Dana Whitfield" data-tier="Premium" data-tierclass="t-Premium"><div class="shot"><img loading="lazy" alt="" src="shots/realestate-whitfield.jpg"></div><div class="body"><span class="tier t-Premium">Premium</span><h3>Dana Whitfield</h3><p>Editorial and unhurried, built around neighbourhood photography and a private conversation rather than a lead form.</p></div></button><button class="card" data-url="/website-demos/realestate-premium/index.html" data-name="Dana Whitfield" data-tier="Standard" data-tierclass="t-Standard"><div class="shot"><img loading="lazy" alt="" src="shots/realestate-premium.jpg"></div><div class="body"><span class="tier t-Standard">Standard</span><h3>Dana Whitfield</h3><p>A restrained agent site: the market, the approach and the person, with contact kept quiet and easy.</p></div></button><button class="card" data-url="/website-demos/realestate-standard/index.html" data-name="Dana Whitfield" data-tier="Lite" data-tierclass="t-Lite"><div class="shot"><img loading="lazy" alt="" src="shots/realestate-standard.jpg"></div><div class="body"><span class="tier t-Lite">Lite</span><h3>Dana Whitfield</h3><p>A single clear page for an agent — who you work with, where you work, and how to start a conversation.</p></div></button></div><h2 class="vert">Auto Repair<span>1 demo</span></h2><div class="grid"><button class="card" data-url="/website-demos/auto-hugo/index.html" data-name="Sample Auto Repair" data-tier="Standard" data-tierclass="t-Standard"><div class="shot"><img loading="lazy" alt="" src="shots/auto-hugo.jpg"></div><div class="body"><span class="tier t-Standard">Standard</span><h3>Sample Auto Repair</h3><p>Straight answers and the price before the work starts, with services, hours and directions all one click away.</p></div></button></div>
+
+  <section class="cta">
+    <h2>Want one of these for your business?</h2>
+    <p>Tell me the trade and the town and I will say which of these is the right shape for it,
+    and what it would take. No obligation and no sales sequence.</p>
+    <a class="btn" href="mailto:michael@mxiventures.com?subject=Website%20demos%20%E2%80%94%20enquiry">Email Michael</a>
+    <a class="btn ghost" href="/websites/">How the websites work &rarr;</a>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <strong>Every site linked from this page is a demonstration of a fictional business.</strong>
+  Nothing here is a real company, and no real customer reviews, licence numbers or phone numbers
+  appear on any of them.
+  <br>&copy; MXI Ventures &middot; <a href="/">mxiventures.com</a>
+</div></footer>
+
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-label="Website demo">
+  <div class="ovpanel">
+    <div class="ovbar">
+      <span class="tier" id="ovtier">Demo</span>
+      <span class="who" id="ovwho"></span>
+      <span class="spacer"></span>
+      <a id="ovnew" href="#" target="_blank" rel="noopener">Open in a new tab</a>
+      <button class="close" type="button">Back to the gallery</button>
+    </div>
+    <iframe id="ovframe" src="about:blank" title="Website demo"></iframe>
+    <p class="hint">A demonstration site for a fictional business &middot; press
+    <kbd>Esc</kbd>, or click outside, to return to the gallery</p>
+  </div>
+</div>
+
+<script>(function(){
+  var ov=document.getElementById('ov'),fr=document.getElementById('ovframe'),
+      who=document.getElementById('ovwho'),tier=document.getElementById('ovtier'),
+      newtab=document.getElementById('ovnew'),last=null;
+
+  function open(card){
+    last=card;
+    try{ history.pushState({demo:1},'',location.pathname); }catch(e){}
+    fr.src=card.dataset.url;
+    who.textContent=card.dataset.name;
+    tier.textContent=card.dataset.tier;
+    tier.className='tier '+card.dataset.tierclass;
+    newtab.href=card.dataset.url;
+    ov.classList.add('on');
+    document.body.style.overflow='hidden';
+    document.querySelector('.ovbar .close').focus();
+  }
+  function close(fromPop){
+    if(!ov.classList.contains('on')) return;
+    if(!fromPop){ try{ if(history.state&&history.state.demo) history.back(); }catch(e){} }
+    ov.classList.remove('on');
+
+    fr.src='about:blank';
+    document.body.style.overflow='';
+    if(last) last.focus();
+  }
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('click',function(){open(c)});
+  });
+  document.querySelector('.ovbar .close').addEventListener('click',function(){close()});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') close();
+  });
+
+  ov.addEventListener('click',function(e){ if(e.target===ov) close(); });
+  window.addEventListener('popstate',function(){ close(true); });
+})();</script>
+</body>
+</html>

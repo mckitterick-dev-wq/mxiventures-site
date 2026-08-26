@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
-Disallow: /childcare/
 Disallow: /trades-auto/
+# The gallery itself is indexable; the demos inside it are not -- every business in
+# them is fictional and must not surface in search as if it were real.
+Disallow: /website-demos/*/
 
 Sitemap: https://mxiventures.com/sitemap.xml
